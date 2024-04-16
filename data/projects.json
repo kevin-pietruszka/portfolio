@@ -1,0 +1,76 @@
+{
+    "AI": [
+        {
+            "Name": "DFS, BFS, A star, Qlearning, Markov Chains for packman (Intro AI)",
+            "Description": "Different search algorithms to find quickest path to pacmans goal",
+            "Language(s)": "Python",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "Gaussian Mixture Modeling, Kmeans, DBScan (ML)",
+            "Description": "Implemented these techniques on arbitrary data",
+            "Language(s)": "Python",
+            "Technologies": "numpy, matplotlib"
+        },
+        {
+            "Name": "Principal Component Analysis, Naive Bayes, Regression (ML)",
+            "Description": "Implemented these techniques on arbitrary data",
+            "Language(s)": "Python",
+            "Technologies": "numpy, matplotlib, sklearn"
+        },
+        {
+            "Name": "Neural Network for Diabetes (ML)",
+            "Description": "Trained network to detect signs of diabetes",
+            "Language(s)": "Python",
+            "Technologies": "numpy, matplotlib, sklearn"
+        },
+        {
+            "Name": "Harris Corner Detector and Sift Feature Extraction (CV)",
+            "Description": "Implemented the algorithms to detect features",
+            "Language(s)": "Python",
+            "Technologies": "CV2, numpy, matplotlib"
+        },
+        {
+            "Name": "Projection Matrix and Fundamental Matrix Estimation with RANSAC (cv)",
+            "Description": "From images on multiple angles to form the scene",
+            "Language(s)": "Python",
+            "Technologies": "CV2, numpy, matplotlib"
+        },
+        {
+            "Name": "Scene Recognition with Bag-of-Words (cv)",
+            "Description": "Nearest Neighbor",
+            "Language(s)": "Python",
+            "Technologies": "CV2, numpy, matplotlib"
+        },
+        {
+            "Name": "Scene Recognition with CNNs (cv)",
+            "Description": "Try to guess which room",
+            "Language(s)": "Python",
+            "Technologies": "CV2, numpy, matplotlib, pytorch"
+        },
+        {
+            "Name": "Image Description for the Visually Impaired",
+            "Description": "App to combine llms with VQA models to create detailed description",
+            "Language(s)": "Python",
+            "Technologies": "Mistral, LLama, GPT, pytorch, cv2, numpy, streamlit"
+        },
+        {
+            "Name": "Performance Tuning for ml (Big Data)",
+            "Description": "Made grid search for finding optimal hyperparameters and visualized training",
+            "Language(s)": "Python",
+            "Technologies": "Collab, pytorch, matplotlib"
+        },
+        {
+            "Name": "Random Forest Classifying (Big Data)",
+            "Description": "Did random forest classification on mushroom species",
+            "Language(s)": "Python",
+            "Technologies": "sklearn, numpy, pandas, Collab"
+        },
+        {
+            "Name": "Collaborative Filtering (Big Data)",
+            "Description": "Filtered to make recommendations on types of anime",
+            "Language(s)": "Python",
+            "Technologies": "numpy and pandas"
+        }
+    ]
+}
