@@ -8,8 +8,6 @@ pub enum Route {
     Project { id: u64 },
     #[at("/projects")]
     Projects,
-    #[at("/skills/:id")]
-    Skill { id: u64 },
     #[at("/skills")]
     Skills,
     #[at("/experience/:id")]
@@ -31,9 +29,6 @@ fn switch(route: Route) {
         },
         Route::Projects => {
             println!("Navigating to Projects List");
-        },
-        Route::Skill { id } => {
-            println!("Navigating to Skill with ID: {}", id);
         },
         Route::Skills => {
             println!("Navigating to Skills List");
