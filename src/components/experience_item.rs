@@ -1,6 +1,7 @@
 use yew::prelude::*;
+use yew_router::components::Link;
 
-use crate::data::{Data, Experience};
+use crate::{app::Route, data::{Data, Experience}};
 
 #[derive(Clone, Debug, PartialEq, Eq, Properties)]
 pub struct Props {
@@ -24,9 +25,16 @@ impl Component for ExperienceItem {
     fn view(&self, ctx: &Context<Self>) -> Html {
 
         html! {
-            <a class="list-item">
-                { "Name go here " }
-            </a>
+            <div class="card">
+                <div class="card-content">
+                    <Link<Route> classes={classes!("title", "is-block")} to={Route::Home}>
+                        { "Test" }
+                    </Link<Route>>
+                    <Link<Route> classes={classes!("subtitle", "is-block")} to={Route::Home}>
+                        { "Test description" }
+                    </Link<Route>>
+                </div>
+            </div>
         }
 
         

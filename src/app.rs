@@ -3,6 +3,11 @@ use yew_router::prelude::*;
 
 use yew::html::Scope;
 
+use crate::pages::home::Home;
+use crate::pages::page_not_found::PageNotFound;
+use crate::pages::project_list::ProjectList;
+use crate::pages::experience_list::ExperienceList;
+
 #[derive(Routable, PartialEq, Eq, Clone, Debug)]
 pub enum Route {
     #[at("/projects/:id")]
@@ -27,19 +32,19 @@ fn switch(route: Route) -> Html {
             html!{<> </>}
         },
         Route::Projects => {
-            html!{<> </>}
+            html!{<ProjectList />}
         },
         Route::Experience { id } => {
             html!{<> </>}
         },
         Route::Experiences => {
-            html!{<> </>}
+            html!{ <ExperienceList />}
         },
         Route::Home => {
-            html!{<> </>}
+            html!{ <Home /> }
         },
         Route::NotFound => {
-            html!{<> </>}
+            html!{<PageNotFound />}
         },
     }
 }
