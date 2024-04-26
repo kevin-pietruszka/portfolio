@@ -8,7 +8,7 @@ impl Component for ProjectList {
     type Message = (); 
     type Properties = ();
 
-    fn create(ctx: &Context<Self>) -> Self {
+    fn create(_ctx: &Context<Self>) -> Self {
         Self
     }
 

@@ -101,20 +101,19 @@ impl Component for App {
     type Message = Msg;
     type Properties = ();
 
-    fn create(ctx: &Context<Self>) -> Self {
+    fn create(_ctx: &Context<Self>) -> Self {
         Self {
             navbar_active: false,
         }
     }
 
-    fn update(&mut self, ctx: &Context<Self>, msg: Self::Message) -> bool {
+    fn update(&mut self, _ctx: &Context<Self>, msg: Self::Message) -> bool {
 
         match msg {
             Msg::ToggleNavbar => {
                 self.navbar_active = !self.navbar_active;
                 true
             },
-            _ => unreachable!()
         }
         
     }
