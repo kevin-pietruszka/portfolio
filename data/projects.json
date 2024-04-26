@@ -1,49 +1,49 @@
 {
     "AI": [
         {
-            "Name": "DFS, BFS, A star, Qlearning, Markov Chains for packman (Intro AI)",
+            "Name": "DFS, BFS, A star, Qlearning, Markov Chains for Packman",
             "Description": "Different search algorithms to find quickest path to pacmans goal",
             "Language(s)": "Python",
             "Technologies": "NA"
         },
         {
-            "Name": "Gaussian Mixture Modeling, Kmeans, DBScan (ML)",
+            "Name": "Gaussian Mixture Modeling, Kmeans, DBScan",
             "Description": "Implemented these techniques on arbitrary data",
             "Language(s)": "Python",
             "Technologies": "numpy, matplotlib"
         },
         {
-            "Name": "Principal Component Analysis, Naive Bayes, Regression (ML)",
+            "Name": "Principal Component Analysis, Naive Bayes, Regression",
             "Description": "Implemented these techniques on arbitrary data",
             "Language(s)": "Python",
             "Technologies": "numpy, matplotlib, sklearn"
         },
         {
-            "Name": "Neural Network for Diabetes (ML)",
+            "Name": "Neural Network for Diabetes",
             "Description": "Trained network to detect signs of diabetes",
             "Language(s)": "Python",
             "Technologies": "numpy, matplotlib, sklearn"
         },
         {
-            "Name": "Harris Corner Detector and Sift Feature Extraction (CV)",
+            "Name": "Harris Corner Detector and Sift Feature Extraction",
             "Description": "Implemented the algorithms to detect features",
             "Language(s)": "Python",
             "Technologies": "CV2, numpy, matplotlib"
         },
         {
-            "Name": "Projection Matrix and Fundamental Matrix Estimation with RANSAC (cv)",
+            "Name": "Projection Matrix and Fundamental Matrix Estimation with RANSAC",
             "Description": "From images on multiple angles to form the scene",
             "Language(s)": "Python",
             "Technologies": "CV2, numpy, matplotlib"
         },
         {
-            "Name": "Scene Recognition with Bag-of-Words (cv)",
+            "Name": "Scene Recognition with Bag-of-Words",
             "Description": "Nearest Neighbor",
             "Language(s)": "Python",
             "Technologies": "CV2, numpy, matplotlib"
         },
         {
-            "Name": "Scene Recognition with CNNs (cv)",
+            "Name": "Scene Recognition with CNNs",
             "Description": "Try to guess which room",
             "Language(s)": "Python",
             "Technologies": "CV2, numpy, matplotlib, pytorch"
@@ -55,22 +55,264 @@
             "Technologies": "Mistral, LLama, GPT, pytorch, cv2, numpy, streamlit"
         },
         {
-            "Name": "Performance Tuning for ml (Big Data)",
+            "Name": "Performance Tuning for ML",
             "Description": "Made grid search for finding optimal hyperparameters and visualized training",
             "Language(s)": "Python",
             "Technologies": "Collab, pytorch, matplotlib"
         },
         {
-            "Name": "Random Forest Classifying (Big Data)",
+            "Name": "Random Forest Classifying",
             "Description": "Did random forest classification on mushroom species",
             "Language(s)": "Python",
             "Technologies": "sklearn, numpy, pandas, Collab"
         },
         {
-            "Name": "Collaborative Filtering (Big Data)",
+            "Name": "Collaborative Filtering",
             "Description": "Filtered to make recommendations on types of anime",
             "Language(s)": "Python",
             "Technologies": "numpy and pandas"
+        }
+    ],
+    "Cloud": [
+        {
+            "Name": "Microsoft Teams behind CMMC level 2",
+            "Description": "Remote app",
+            "Language(s)": "Terraform, Bash",
+            "Technologies": "Azure, Github Workflows"
+        },
+        {
+            "Name": "Py and Apt proxies for cloud environments",
+            "Description": "Proxies",
+            "Language(s)": "Terraform, Bash",
+            "Technologies": "Azure, Github Workflows"
+        }
+    ],     
+    "Data Science": [
+        {
+            "Name": "White House Visitors",
+            "Description": "Calculated statistics based on white house guest statistics",
+            "Language(s)": "Python",
+            "Technologies": "PySpark, GCP"
+        },
+        {
+            "Name": "Movie Actors Graph Visualization",
+            "Description": "Made sqlite database from movie API data and created a graph to display movie and actor links",
+            "Language(s)": "Python",
+            "Technologies": "Sqlite, APIs"
+        },
+        {
+            "Name": "Board Game d3 visualizations",
+            "Description": "Created a forced directed graph, interactive line charts, and choropleth map to show relationships between games in D3, their ratings, and use by location",
+            "Language(s)": "Html, JS, css",
+            "Technologies": "d3"
+        },
+        {
+            "Name": "Spark on GCP, Databricks, AWS for NYC taxi data analysis",
+            "Description": "Did analysis on statistics like high traffic times and whatnot",
+            "Language(s)": "Python",
+            "Technologies": "PySpark, Docker, GCP, Databricks, AWS"
+        },
+        {
+            "Name": "Climate Change Prediction",
+            "Description": "",
+            "Language(s)": "",
+            "Technologies": ""
+        },
+        {
+            "Name": "SQL Schema for Travel Reservations Service",
+            "Description": "Creating EERD, tables, procedures for standard queries in SQL",
+            "Language(s)": "sql",
+            "Technologies": "mysql"
+        }
+    ],
+    "Data Structures & Algos": [
+        {
+            "Name": "Stack, Queue, ArrayList/Vector, LinkedList, BST, AVL",
+            "Description": "Coded these structures in Java",
+            "Language(s)": "Java",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "Sorting",
+            "Description": "Merge, Radix, Quick, Heap sort Coded in Java",
+            "Language(s)": "Java",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "Pattern Matching",
+            "Description": "KMP and boyer moore",
+            "Language(s)": "Java",
+            "Technologies": "NA"
+        }
+    ],
+    "Graphics/Games": [
+        {
+            "Name": "Ray tracer",
+            "Description": "Designed a ray tracer with transformations, bounding volume hierarchy, with glossy and glossy shading, and lens",
+            "Language(s)": "Java",
+            "Technologies": "Processing"
+        },
+        {
+            "Name": "Implicit Surfaces",
+            "Description": "Implicit surface renderer with marching cubes",
+            "Language(s)": "Java",
+            "Technologies": "Processing"
+        },
+        {
+            "Name": "Mesh Manipulation",
+            "Description": "Taubin smoothing, loop subdivision, laplacian smoothing for decreasing and increasing mesh size",
+            "Language(s)": "Java",
+            "Technologies": "Processing"
+        },
+        {
+            "Name": "GBA Game",
+            "Description": "Pong game on a Game Boy Advance emulator",
+            "Language(s)": "C",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "FarmGuardians",
+            "Description": "A simulated farm game",
+            "Language(s)": "Java",
+            "Technologies": "JavaFX"
+        },
+        {
+            "Name": "Pokemon Battle Scene",
+            "Description": "Made a Pokemon battle",
+            "Language(s)": "Java",
+            "Technologies": "JavaFX"
+        }
+    ], 
+    "Security": [
+        {
+            "Name": "ShellShock and password cracking",
+            "Description": "Network scanning, reverse shell, password cracking",
+            "Language(s)": "bash",
+            "Technologies": "nmap, netcat, Metasploit, John the Ripper"
+        },
+        {
+            "Name": "XSS",
+            "Description": "Reflective, Persistent Client Side, Stored",
+            "Language(s)": "Javascript",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "Malware Analysis",
+            "Description": "Use control flow graphs and analyzed for symbolic execution",
+            "Language(s)": "Python",
+            "Technologies": "WireShark, Cuckoo"
+        },
+        {
+            "Name": "DDoS prevention",
+            "Description": "Analyzed TCP/UDP/HTTP/FTP/SSH traffic to detect GoldenEyeand Low Orbit Ion Cannon DDoS, web attacks, and botnets",
+            "Language(s)": "Python",
+            "Technologies": "Snort"
+        },
+        {
+            "Name": "Polymorphic Blending Attacks",
+            "Description": "Trained a PAYL model to detect attacks",
+            "Language(s)": "python",
+            "Technologies": "Wireshark"
+        }
+    ],
+    "Systems & Networking": [
+        {
+            "Name": "Simulated Super Scalar with Branch Prediction",
+            "Description": "Processor cycle simulation with branch prediction of gshare, gselect, and tournament",
+            "Language(s)": "C++",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "Simulated Out-of-Order processor with cache and error flushing",
+            "Description": "Processor cycle simulation with cache and error detection and flushing",
+            "Language(s)": "C++",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "Simulated L2 Cache with DRAM",
+            "Description": "Simulated cache system",
+            "Language(s)": "cpp",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "Built Computer in a Circuit Sim",
+            "Description": "Built finite state machine, latches, and microcode lc3 and lc901",
+            "Language(s)": "NA",
+            "Technologies": "CircuitSim"
+        },
+        {
+            "Name": "Assembly Code for Data Structures and Sorting",
+            "Description": "Bubble sort, binary tree, hashmap, linkedlist",
+            "Language(s)": "Assembly",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "Memory Page Simulator",
+            "Description": "Simulated page faults and page replacements",
+            "Language(s)": "c",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "Process Scheduler",
+            "Description": "Simulated multi threaded processes and schedule algorithm",
+            "Language(s)": "C",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "RTP",
+            "Description": "Wrote code to transfer packets",
+            "Language(s)": "C",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "Chat Room",
+            "Description": "Chatroom server and client for either TCP or UDP connections",
+            "Language(s)": "C++",
+            "Technologies": "make"
+        },
+        {
+            "Name": "Mini Internet",
+            "Description": "Configured BGP and OSPF between simulated tier 2 and three network",
+            "Language(s)": "Python, p4",
+            "Technologies": "NA"
+        },
+        {
+            "Name": "Client Server Backup Protocol",
+            "Description": "Client and server logic for a key value store",
+            "Language(s)": "Java",
+            "Technologies": "lombok"
+        },
+        {
+            "Name": "Primary-Backup Distributed Protocol",
+            "Description": "Client and server logic for a key value store where the backups are connected to serve for loss of connections",
+            "Language(s)": "Java",
+            "Technologies": "lombok"
+        },
+        {
+            "Name": "Multi-paxos protocol",
+            "Description": "Client and server logic for a key value store where the servers communicate with a multi-paxos protocol",
+            "Language(s)": "Java",
+            "Technologies": "lombok"
+        },
+        {
+            "Name": "Sharded multi-paxos",
+            "Description": "Client and server logic for a key value store where the shards are split into different node clusters that communicate with a multi-paxos protocol to replicate order of events and can handle shard movement",
+            "Language(s)": "Java",
+            "Technologies": "lombok"
+        }
+    ],
+    "Web/Mobile Development": [
+        {
+            "Name": "Advising Pathways",
+            "Description": "App to make registration easier and game like",
+            "Language(s)": "sql, javascript, html, css",
+            "Technologies": "Mysql, React"
+        },
+        {
+            "Name": "FlexBros",
+            "Description": "Workout app",
+            "Language(s)": "TypeScript, HTML, CSS",
+            "Technologies": "Firebase, Ionic, React"
         }
     ]
 }
