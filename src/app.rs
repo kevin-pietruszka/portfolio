@@ -3,8 +3,10 @@ use yew_router::prelude::*;
 
 use yew::html::Scope;
 
+use crate::pages::experience::ExperiencePage;
 use crate::pages::home::Home;
 use crate::pages::page_not_found::PageNotFound;
+use crate::pages::project::ProjectPage;
 use crate::pages::project_list::ProjectList;
 use crate::pages::experience_list::ExperienceList;
 
@@ -29,13 +31,13 @@ pub enum Route {
 fn switch(route: Route) -> Html {
     match route {
         Route::Project { id } => {
-            html!{<> </>}
+            html!{<ProjectPage id={id}/>}
         },
         Route::Projects => {
             html!{<ProjectList />}
         },
         Route::Experience { id } => {
-            html!{<> </>}
+            html!{<ExperiencePage id={id}/>}
         },
         Route::Experiences => {
             html!{ <ExperienceList />}
