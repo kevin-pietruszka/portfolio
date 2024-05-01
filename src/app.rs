@@ -97,7 +97,7 @@ impl App {
         }
     }
 
-    fn view_footer(&self, link: &Scope<Self>) -> Html {
+    fn view_footer(&self) -> Html {
         html! {
             <footer class="footer">
                 <div class="content has-text-centered">
@@ -141,7 +141,7 @@ impl Component for App {
                     <Switch<Route> render={switch} />
                 </main>
 
-                { self.view_footer(ctx.link()) }
+                { self.view_footer() }
 
             </BrowserRouter>
         } 
