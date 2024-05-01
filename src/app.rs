@@ -77,6 +77,7 @@ impl App {
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </button>
                 </div>
                 <div class={classes!("navbar-menu", active_class)}>
@@ -93,6 +94,19 @@ impl App {
                     </div>
                 </div>
             </nav>
+        }
+    }
+
+    fn view_footer(&self, link: &Scope<Self>) -> Html {
+        html! {
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    { "Powered by " }
+                    <a href="https://yew.rs">{ "Yew" }</a>
+                    { " using " }
+                    <a href="https://bulma.io">{ "Bulma" }</a>
+                </div>
+            </footer>
         }
     }
 }
@@ -126,14 +140,9 @@ impl Component for App {
                 <main>
                     <Switch<Route> render={switch} />
                 </main>
-                <footer class="footer">
-                    <div class="content has-text-centered">
-                        { "Powered by " }
-                        <a href="https://yew.rs">{ "Yew" }</a>
-                        { " using " }
-                        <a href="https://bulma.io">{ "Bulma" }</a>
-                    </div>
-                </footer>
+
+                { self.view_footer(ctx.link()) }
+
             </BrowserRouter>
         } 
     }
