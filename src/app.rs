@@ -66,7 +66,7 @@ impl App {
         let active_class = if !navbar_active { "is-active" } else { "" };
 
         html! {
-            <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <h1 class="navbar-item is-size-3">{ "Portfolio" }</h1>
 
@@ -102,9 +102,12 @@ impl App {
             <footer class="footer">
                 <div class="content has-text-centered">
                     { "Powered by " }
-                    <a href="https://yew.rs">{ "Yew" }</a>
+                    <a target="_blank" rel="noreferrer noopener" href="https://yew.rs">{ "Yew" }</a>
                     { " using " }
-                    <a href="https://bulma.io">{ "Bulma" }</a>
+                    <a target="_blank" rel="noreferrer noopener" href="https://bulma.io">{ "Bulma" }</a>
+                    { " with the lux theme provided by " }
+                    <a target="_blank" rel="noreferrer noopener" href="https://jenil.github.io/bulmaswatch/">{ "Bulmaswatch" }</a>
+                    {"."}
                 </div>
             </footer>
         }
@@ -137,9 +140,7 @@ impl Component for App {
             <BrowserRouter>
                 { self.view_nav(ctx.link()) }
 
-                <main>
-                    <Switch<Route> render={switch} />
-                </main>
+                <Switch<Route> render={switch} />
 
                 { self.view_footer() }
 
