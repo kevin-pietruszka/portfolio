@@ -13,9 +13,9 @@ impl Component for PageNotFound {
 
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
-            <section class="hero is-danger is-bold is-large">
+            <section class="hero is-bold is-large is-fullheight">
                 <div class="hero-body">
-                    <div class="containter">
+                    <div class="container has-text-centered">
                         <h1 class="title">
                             { "Page Not Found" }
                         </h1>
