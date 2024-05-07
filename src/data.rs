@@ -1,24 +1,24 @@
-
-pub trait Data {
-    fn create_from_id(id: u64) -> Self;
-}
+#[derive(Debug, Clone, Eq, PartialEq)]
 pub struct Project {
-    id: u64,
 }
 
-impl Data for Project {
-    fn create_from_id(id: u64) -> Self {
-        Project { id: 0 }
-    }
-}
-
+#[derive(Debug, Clone, Eq, PartialEq)]
 pub struct Experience {
-    id: u64,
+    pub begin: String,
+    pub end: String,
+    pub title: String,
+    pub description: String,
+    pub tags: Vec<String>,
 }
 
-impl Data for Experience {
-    fn create_from_id(id: u64) -> Self {
-        Experience { id: 0 }
+impl Experience {
+    pub fn new(begin: impl Into<String>, end: impl Into<String>, title: impl Into<String>, description: impl Into<String>, tags: Vec<String>) -> Self {
+        Self {
+            begin: begin.into(),
+            end: end.into(),
+            title: title.into(),
+            description: description.into(),
+            tags,
+        }
     }
 }
-
