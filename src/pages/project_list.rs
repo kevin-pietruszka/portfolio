@@ -15,11 +15,18 @@ impl Component for ProjectList {
     fn view(&self, ctx: &Context<Self>) -> Html {
         
         html! {
-            <div class="section container">
-                <h1 class="title"> { "Projects" } </h1>
-                <h2 class="subtitle"> { "The projects I have done in my free time and in classes" } </h2>
+            <div class="section">
+                <div class="hero">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <p class="title is-1"> { "Projects I have done" }</p>
+                        </div>
+                    </div>
+                </div>
 
-                {self.view_projects(ctx)}
+                <div class="is-divider"></div>
+
+                { self.view_projects(ctx) }
             </div>
         } 
     }
@@ -27,9 +34,9 @@ impl Component for ProjectList {
 
 impl ProjectList {
     fn view_projects(&self, _ctx: &Context<Self>) -> Html {
-        let test = (0..5).map(|index| {
+        let test = (0..10).map(|index| {
             html! {
-                <li class ="list-item mb-5">
+                <li class ="list-item">
 
                     <ProjectItem id={index}/>
 

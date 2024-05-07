@@ -1,7 +1,7 @@
 use yew::prelude::*;
 use yew_router::components::Link;
 
-use crate::{app::Route, data::{Data, Project}};
+use crate::{app::Route, data::{Project}};
 
 #[derive(Clone, Debug, PartialEq, Eq, Properties)]
 pub struct Props {
@@ -18,7 +18,7 @@ impl Component for ProjectItem {
 
     fn create(ctx: &Context<Self>) -> Self {
         Self {
-            project: Project::create_from_id(ctx.props().id),
+            project: Project {},
         } 
     }
 

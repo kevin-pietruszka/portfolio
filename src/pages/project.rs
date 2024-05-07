@@ -1,6 +1,6 @@
 use yew::prelude::*;
 
-use crate::data::{Data, Project};
+use crate::data::Project;
 
 #[derive(Clone, Debug, PartialEq, Eq, Properties)]
 pub struct Props {
@@ -17,7 +17,7 @@ impl Component for ProjectPage {
 
     fn create(ctx: &Context<Self>) -> Self {
         Self {
-            project: Project::create_from_id(ctx.props().id)
+            project: Project {},
         }
     }
 
