@@ -11,57 +11,42 @@ impl Component for Home {
 
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
-            <div class="tile is-ancestor is-vertical">
-                <div class="tile is-child hero">
-                    <div class="hero-body container pb-0">
-                        <h1 class="title is-1">{ "Welcome to my Portofolio" }</h1>
+            <div class="section">
+                <div class="hero">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            <figure class="image is-128x128 is-inline-block">
+                                <img class="is-rounded" src="https://bulma.io/assets/images/placeholders/128x128.png" />
+                            </figure>
+                            <p class="title is-1"> { "Kevin Pietruszka" }</p>
+                            <p class="subtitle"> {"Subtitle"} </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="tile is-child">
-                    <figure class="image is-3by1">
-                        <img alt="A random image for the input term 'yew'." src="https://source.unsplash.com/random/1200x400/?yew" />
-                    </figure>
-                </div>
+                <div class="is-divider"></div>
 
-                <div class="tile is-parent container">
-                    { self.view_info_tiles() }
+                <div class="container">
+                    <div class="box">
+                        <div class="columns">
+                            <div class="column is-three-fifths">
+                                <div class="content">
+                                    <p class="title">{ "About Me" }</p>
+                                    <p>{"Description here"}</p>
+                                </div>
+                            </div>
+
+                            <div class="is-divider-vertical"></div>
+
+                            <div class="column">
+                                <div class="content has-text-centered">
+                                    <p class="title"> {"Contact Me"} </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        }
-    }
-}
-impl Home {
-    fn view_info_tiles(&self) -> Html {
-        html! {
-            <>
-                <div class="tile is-parent">
-                    <div class="tile is-child box">
-                        <p class="title">{ "Who am I?" }</p>
-                        <p class="subtitle">{ "Everything you need to know!" }</p>
-
-                        <div class="content">
-                            {r#"
-                            Hello my name is Kevin Pietruszka
-                            "#}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tile is-parent">
-                    <div class="tile is-child box">
-                        <p class="title">{ "Contact Info" }</p>
-
-                        <div class="content">
-                            {r#"
-                            github:
-                            linkedin:
-                            email:
-                            "#}
-                        </div>
-                    </div>
-                </div>
-            </>
         }
     }
 }
