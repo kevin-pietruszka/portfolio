@@ -1,11 +1,9 @@
 use yew::prelude::*;
-use yew_router::components::Link;
+use crate::data::Experience;
 
-use crate::{app::Route, data::{Data, Experience}};
-
-#[derive(Clone, Debug, PartialEq, Eq, Properties)]
+#[derive(Clone, Debug, Eq, PartialEq, Properties)]
 pub struct Props {
-    pub id: u64,
+    pub e: Experience,
 }
 
 pub struct ExperienceItem {
@@ -18,25 +16,28 @@ impl Component for ExperienceItem {
 
     fn create(ctx: &Context<Self>) -> Self {
         Self {
-            experience: Experience::create_from_id(ctx.props().id),
+            experience: ctx.props().e.clone(),
         } 
     }
 
     fn view(&self, ctx: &Context<Self>) -> Html {
 
         html! {
-            <div class="card">
-                <div class="card-content">
-                    <Link<Route> classes={classes!("title", "is-block")} to={Route::Home}>
-                        { "Test" }
-                    </Link<Route>>
-                    <Link<Route> classes={classes!("subtitle", "is-block")} to={Route::Home}>
-                        { "Test description" }
-                    </Link<Route>>
+            <>
+                <header class="timeline-header">
+                    <span class="tag is-large is-primary"> { "DATE" }  </span>
+                </header>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="box">
+                            <p class="heading"> {"Title - Company"} </p>
+                            <p> {"Description"} </p>
+                            <p> {"Tags"} </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </>
         }
-
-        
     }
 }
