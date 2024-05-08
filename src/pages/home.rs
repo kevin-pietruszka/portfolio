@@ -30,7 +30,7 @@ impl Component for Home {
                     <div class="box">
                         <div class="columns">
                             <div class="column is-three-fifths">
-                                <div class="content">
+                                <div class="content has-text-centered">
                                     <p class="title">{ "About Me" }</p>
                                     <p>{"Description here"}</p>
                                 </div>
