@@ -3,7 +3,6 @@ use yew_router::prelude::*;
 
 use yew::html::Scope;
 
-use crate::pages::experience::ExperiencePage;
 use crate::pages::home::Home;
 use crate::pages::page_not_found::PageNotFound;
 use crate::pages::project::ProjectPage;
@@ -16,10 +15,8 @@ pub enum Route {
     Project { id: u64 },
     #[at("/projects")]
     Projects,
-    #[at("/experience/:id")]
-    Experience { id: u64 },
     #[at("/experience")]
-    Experiences,
+    Experience,
     #[at("/")]
     Home,
     #[not_found]
@@ -36,10 +33,7 @@ fn switch(route: Route) -> Html {
         Route::Projects => {
             html!{<ProjectList />}
         },
-        Route::Experience { id } => {
-            html!{<ExperiencePage id={id}/>}
-        },
-        Route::Experiences => {
+        Route::Experience => {
             html!{ <ExperienceList />}
         },
         Route::Home => {
@@ -85,7 +79,7 @@ impl App {
                         <Link<Route> classes={classes!("navbar-item")} to={Route::Home}>
                             { "Home" }
                         </Link<Route>>
-                        <Link<Route> classes={classes!("navbar-item")} to={Route::Experiences}>
+                        <Link<Route> classes={classes!("navbar-item")} to={Route::Experience}>
                             { "Experience" }
                         </Link<Route>>
                         <Link<Route> classes={classes!("navbar-item")} to={Route::Projects}>
