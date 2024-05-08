@@ -10,25 +10,6 @@ pub struct Experience {
 }
 
 impl Experience {
-    pub fn new(
-        begin: impl Into<String>,
-        end: impl Into<String>,
-        title: impl Into<String>,
-        company: impl Into<String>,
-        company_link: impl Into<String>,
-        description: impl Into<String>,
-        tags: Vec<String>,
-    ) -> Self {
-        Self {
-            begin: begin.into(),
-            end: end.into(),
-            title: title.into(),
-            company: company.into(),
-            company_link: company_link.into(),
-            description: description.into(),
-            tags,
-        }
-    }
 
     pub fn data() -> Vec<Experience> {
         vec![
