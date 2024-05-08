@@ -1,8 +1,4 @@
 #[derive(Debug, Clone, Eq, PartialEq)]
-pub struct Project {
-}
-
-#[derive(Debug, Clone, Eq, PartialEq)]
 pub struct Experience {
     pub begin: String,
     pub end: String,

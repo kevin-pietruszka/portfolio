@@ -1,7 +1,7 @@
 use yew::prelude::*;
 use yew_router::components::Link;
 
-use crate::{app::Route, data::{Project}};
+use crate::data::project::Project;
 
 #[derive(Clone, Debug, PartialEq, Eq, Properties)]
 pub struct Props {
@@ -25,16 +25,7 @@ impl Component for ProjectItem {
     fn view(&self, ctx: &Context<Self>) -> Html {
 
         html! {
-            <div class="card">
-                <div class="card-content">
-                    <Link<Route> classes={classes!("title", "is-block")} to={Route::Home}>
-                        { "Test" }
-                    </Link<Route>>
-                    <Link<Route> classes={classes!("subtitle", "is-block")} to={Route::Home}>
-                        { "Test description" }
-                    </Link<Route>>
-                </div>
-            </div>
+            {"Test"}
         }
 
         

@@ -1,6 +1,7 @@
 use yew::prelude::*;
 
-use crate::{components::experience_item::ExperienceItem, data::Experience};
+use crate::components::experience_item::ExperienceItem;
+use crate::data::experience::Experience;
 pub struct ExperienceList {
     experiences: Vec<Experience>,
 }
