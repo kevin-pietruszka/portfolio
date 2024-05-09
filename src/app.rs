@@ -5,14 +5,11 @@ use yew::html::Scope;
 
 use crate::pages::home::Home;
 use crate::pages::page_not_found::PageNotFound;
-use crate::pages::project::ProjectPage;
 use crate::pages::project_list::ProjectList;
 use crate::pages::experience_list::ExperienceList;
 
 #[derive(Routable, PartialEq, Eq, Clone, Debug)]
 pub enum Route {
-    #[at("/projects/:id")]
-    Project { id: u64 },
     #[at("/projects")]
     Projects,
     #[at("/experience")]
@@ -27,9 +24,6 @@ pub enum Route {
 
 fn switch(route: Route) -> Html {
     match route {
-        Route::Project { id } => {
-            html!{<ProjectPage id={id}/>}
-        },
         Route::Projects => {
             html!{<ProjectList />}
         },
