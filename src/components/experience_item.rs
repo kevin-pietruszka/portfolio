@@ -36,6 +36,7 @@ impl Component for ExperienceItem {
                                 <a href={link} target="_blank">{ &self.experience.company }</a>
                             </p>
                             <p class="description"> { &self.experience.description } </p>
+                            <div class="is-divider"> </div>
                             <div class="tags is-centered"> {for tags} </div>
                         </div>
                     </div>
