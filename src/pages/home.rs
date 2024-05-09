@@ -50,9 +50,8 @@ impl Component for Home {
                             <div class="content has-text-centered">
                                 <p class="title">{"Contact Me"}</p>
                                 <p> <a target="_blank" rel="noreferrer noopener" href="mailto:kevinpiet13@gmail.com"> {"Email: " } </a> {"kevinpiet13@gmail.com"} </p>
-                                <p> <a target="_blank" rel="noreferrer noopener" href="https://github.com/kevin-pietruszka">{"Github"}</a></p>
-                                <p> <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/kevin-pietruszka">{"LinkedIn"}</a></p>
-                                <p> <a target="_blank" rel="noreferrer noopener" href="https://www.intsagram.com/kevinpie13/?utm_source=qr">{"Instagram"}</a></p>
+                                <p> <a target="_blank" rel="noreferrer noopener" href="https://github.com/kevin-pietruszka">{"Github: "}</a> {"kevin-pietruszka"} </p>
+                                <p> <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/kevin-pietruszka">{"LinkedIn: "}</a> {"Kevin Pietruszka"} </p>
                             </div>
                         </div>
                     </div>
