@@ -57,7 +57,7 @@ impl App {
 
         let Self { navbar_active, .. } = *self;
 
-        let active_class = if !navbar_active { "is-active" } else { "" };
+        let active_class = if navbar_active { "is-active" } else { "" };
 
         html! {
             <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
