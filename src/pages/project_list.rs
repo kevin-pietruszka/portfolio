@@ -1,15 +1,19 @@
 use yew::prelude::*;
 
-use crate::components::project_item::ProjectItem;
+use crate::{components::project_item::ProjectItem, data::project::Project};
 
-pub struct ProjectList;
+pub struct ProjectList {
+    projects: Vec<Project>,
+}
 
 impl Component for ProjectList {
     type Message = (); 
     type Properties = ();
 
     fn create(_ctx: &Context<Self>) -> Self {
-        Self
+        Self {
+            projects: Project::data(),
+        }
     }
 
     fn view(&self, ctx: &Context<Self>) -> Html {
@@ -26,7 +30,11 @@ impl Component for ProjectList {
 
                 <div class="is-divider"></div>
 
-                { self.view_projects(ctx) }
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        { self.view_projects(ctx) }
+                    </div>
+                </div>
             </div>
         } 
     }
@@ -34,22 +42,37 @@ impl Component for ProjectList {
 
 impl ProjectList {
     fn view_projects(&self, _ctx: &Context<Self>) -> Html {
-        let test = (0..10).map(|index| {
+        let mut children = self.projects.iter().map(|project| {
             html! {
-                <li class ="list-item">
-
-                    <ProjectItem id={index}/>
-
-                </li>
+                <ProjectItem p={project.clone()}/>
             }
         });
 
+        let number_of_columns = 3;
+
+        let length = children.len();
+        let partitions = length / number_of_columns;
+        let remainder = length % number_of_columns;
+
+        let columns = (0..number_of_columns).into_iter().map(|c| {
+            if c == 0 {
+                html! {
+                    <div class="column">
+                        {for children.by_ref().take(partitions + remainder) }
+                    </div>
+                }
+            } else {
+                html! {
+                    <div class="column">
+                        {for children.by_ref().take(partitions) }
+                    </div>
+                }
+            }
+        });
 
         html! {
-            <div class="column">
-                <ul class="list">
-                    {for test}
-                </ul>
+            <div class="columns">
+                {for columns}
             </div>
         }
     }
