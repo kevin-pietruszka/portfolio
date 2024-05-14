@@ -54,7 +54,7 @@ impl ProjectList {
         let partitions = length / number_of_columns;
         let mut remainder = length % number_of_columns;
 
-        let columns = (0..number_of_columns).into_iter().map(|c| {
+        let columns = (0..number_of_columns).into_iter().map(|_| {
             if remainder > 0 {
                 remainder -= 1;
                 html! {
