@@ -26,19 +26,29 @@ impl Component for ProjectItem {
 
         html! {
             <div class="box">
-                <div class="columns">
-                    <div class="column is-centered has-text-centered">
-                        <figure class="image is-128x128">
-                            <img src={image_path} />
-                        </figure>
-                        <p class="title is-4"> {self.project.title.as_str()} </p>
-                    </div>
+                <div class="card-image">
+                    <figure class="image">
+                        <img src={image_path} />
+                    </figure>
+                </div>
 
-                    <div class="column is-centered has-text-centered"> 
-                        {self.project.description.as_str() }
-
+                <div class="card-content">
+                    <div class="content has-text-centered">
+                        <p class="title is-4"> {self.project.title.as_str() } </p>
+                        <p> {self.project.description.as_str()} </p>
                     </div>
                 </div>
+                
+                if self.project.is_public {
+                    <div class="card-footer">
+                        <a href={self.project.github_link.clone()} class="card-footer-item">
+                            <span class="icon">
+                                <i class="fab fa-github"> </i>
+                            </span>
+                            <span> {"Github"} </span>
+                        </a>
+                    </div>
+                }
             </div>
         }
 
