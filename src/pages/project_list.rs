@@ -52,19 +52,20 @@ impl ProjectList {
 
         let length = children.len();
         let partitions = length / number_of_columns;
-        let remainder = length % number_of_columns;
+        let mut remainder = length % number_of_columns;
 
         let columns = (0..number_of_columns).into_iter().map(|c| {
-            if c == 0 {
+            if remainder > 0 {
+                remainder -= 1;
                 html! {
                     <div class="column">
-                        {for children.by_ref().take(partitions + remainder) }
+                        {for children.by_ref().take(partitions + 1)}
                     </div>
                 }
             } else {
                 html! {
                     <div class="column">
-                        {for children.by_ref().take(partitions) }
+                        {for children.by_ref().take(partitions)}
                     </div>
                 }
             }
