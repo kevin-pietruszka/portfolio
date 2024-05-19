@@ -48,7 +48,7 @@ impl ProjectList {
             }
         });
 
-        let number_of_columns = 3;
+        let number_of_columns = 4;
 
         let length = children.len();
         let partitions = length / number_of_columns;
