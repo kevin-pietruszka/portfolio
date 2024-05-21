@@ -45,13 +45,8 @@ impl ExperienceList {
         html! {
             <div class="container">
                 <div class="columns is-centered">
-                    <div class="column is-four-fifths">
-                        <div class="timeline is-centered">
+                    <div class="column is-two-fifths">
                             { for test }
-                            <div class="timeline-header">
-                                <span class="tag is-medium is-primary"> {"End"} </span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
